@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div id="page-wrap">
+    <div class="row">
+      <div class="large-4 columns">
+        <div id="player1-panel">
+          <p class="player">Player 1</p>
+          <p id="player1-icon">X</p>
+          <p id="winner1">Winner!</p><br/>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <table>
+          <tr>
+            <th id="space_11" onclick="makeMove(11)"></th>
+            <th id="space_12" onclick="makeMove(12)"></th>
+            <th id="space_13" onclick="makeMove(13)"></th>
+          </tr>
+          <tr>
+            <th id="space_21" onclick="makeMove(21)"></th>
+            <th id="space_22" onclick="makeMove(22)"></th>
+            <th id="space_23" onclick="makeMove(23)"></th>
+          </tr>
+          <tr>
+            <th id="space_31" onclick="makeMove(31)"></th>
+            <th id="space_32" onclick="makeMove(32)"></th>
+            <th id="space_33" onclick="makeMove(33)"></th>
+          </tr>
+        </table><br/>
+        <input type="button" onclick="init()" value="New Game" /><br/>
+      </div>
+      <div class="large-4 columns">
+        <div id="player2-panel">
+          <p class="player">Player 2</p>
+          <p id="player2-icon">O</p>
+          <p id="winner2">Winner!</p><br/>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
